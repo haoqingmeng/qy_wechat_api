@@ -62,8 +62,9 @@ module QyWechatApi
 
         def http?(uri)
           return false if !uri.is_a?(String)
-          uri = URI.parse(uri)
-          uri.scheme =~ /^https?$/
+          # uri = URI.parse(uri)
+          # uri.scheme =~ /^https?$/
+          0
         end
 
         def jpep?(file)
